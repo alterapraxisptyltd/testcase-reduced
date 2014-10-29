@@ -6,7 +6,7 @@ NM=i386-elf-nm
 
 CFLAGS=-D__PRE_RAM__
 CFLAGS+=-I. -nostdlib -static -ffreestanding
-CFLAGS+=-target i386-linux-elf -m32
+CFLAGS+=-no-integrated-as -target i386-linux-elf -m32
 LDFLAGS=-T testcase.ld
 OBJ = testcase.o
 
